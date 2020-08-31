@@ -828,6 +828,7 @@ kissat_application (kissat * solver, int argc, char **argv)
 #ifndef QUIET
   kissat_print_statistics (solver);
 #endif
+  kissat_print_resources(solver);
 #ifndef NPROOFS
   close_proof (&application);
 #endif
